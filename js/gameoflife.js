@@ -6,7 +6,7 @@ function seed(){
 function same([x, y], [j, k]) {
   let cellA = [x, y];
   let cellB = [j, k];
-  if(cellA === cellB){
+  if(cellA[0,1] === cellB[0,1]){
     return true;
   }
 }
