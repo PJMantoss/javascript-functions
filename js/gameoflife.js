@@ -4,11 +4,18 @@ function seed(){
 }
 
 function same([x, y], [j, k]) {
-  let cellA = [x, y];
-  let cellB = [j, k];
-  if(cellA[0,1] === cellB[0,1]){
-    return true;
+  let cell1 = [x, y], cell2 = [j, k];
+
+  for (let i=0; i<cell1.length; i++){
+    for(let j=0; j<cell2.length; j++){
+      if(cell1[i] === cell2[j]){
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
+
 }
 
 // The game state to search for `cell` is passed as the `this` value of the function.
