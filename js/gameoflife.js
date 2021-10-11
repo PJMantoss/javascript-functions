@@ -20,8 +20,8 @@ function same([x, y], [j, k]) {
 
 // The game state to search for `cell` is passed as the `this` value of the function.
 function contains(cell) {
-  if(this && this.includes(cell)){
-    return cell
+  if(this.includes(cell)){
+    return true;
   }
 }
 
