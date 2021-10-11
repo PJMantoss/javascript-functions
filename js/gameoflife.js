@@ -22,7 +22,7 @@ function same([x, y], [j, k]) {
 function contains(cell) {
   for(let i=0; i<cell.length; i++){
     for (let j=0; j<this.length; j++){
-      if(this[i].isEqual(cell[j])){
+      if(cell[j].isEqual(this[i])){
         return true;
       } else {
         return false
