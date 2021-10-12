@@ -20,15 +20,18 @@ function same([x, y], [j, k]) {
 
 // The game state to search for `cell` is passed as the `this` value of the function.
 function contains(cell) {
-  for(let i=0; i<cell.length; i++){
-    for (let j=0; j<this.length; j++){
-      if(cell[j] === this[i]){
-        return true;
-      } else {
-        return false
-      }
-    }
-  }
+  if(cell.find(this) === true){
+    return this;
+  };
+  // for(let i=0; i<cell.length; i++){
+  //   for (let j=0; j<this.length; j++){
+  //     if(cell[j] == this[i]){
+  //       return true;
+  //     } else {
+  //       return false
+  //     }
+  //   }
+  // }
 }
 
 const printCell = (cell, state) => {};
